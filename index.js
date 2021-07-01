@@ -4,8 +4,9 @@ const port = 3001;
 //console.log(app);
 
 app.use((req, res) => {
-  console.log("We got a new request");
-  console.log(req)
+  //res.send('Hello, we got your request, This is your response');
+  //res.send('<h1>Hello, this is a response</h1>');
+  res.send({color: 'red'})
 });
 
 //app.get('/', (req, res) => {
